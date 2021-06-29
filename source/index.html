@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IU-KIT</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <include src="build/img/sprite_auto.svg"></include>
+
+  <header class="header"></header>
+  <main class="main container">
+    <h1 class="visually-hidden">IU-KIT</h1>
+
+    <p class="input">
+      <label for="basic-input">Input Basic</label>
+      <input type="text" id="basic-input" placeholder="Placeholder">
+    </p>
+
+    <p class="input input--error">
+      <label for="input-error">Input Error</label>
+      <input type="text" id="input-error" value="Value">
+    </p>
+
+    <p class="input input--focused">
+      <label for="input-focused">Input Focused</label>
+      <input type="text" id="input-focused" value="Value">
+    </p>
+
+    <p class="input input--disabled">
+      <label for="input-disabled">Input Disabled</label>
+      <input type="text" id="input-disabled" value="Value">
+    </p>
+
+    <p class="input input--no-label">
+      <label class="visually-hidden" for="input-no-label">Input Basic</label>
+      <input type="text" id="input-no-label" placeholder="Placeholder">
+    </p>
+
+    <p class="input input-serch input-serch--left">
+      <label for="input-search-left">
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </label>
+      <input type="text" id="input-search-left" placeholder="Placeholder">
+    </p>
+
+    <p class="input input-serch input-serch--right">
+      <label for="input-search-right">
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </label>
+      <input type="text" id="input-search-right" placeholder="Placeholder">
+    </p>
+
+    <p class="select">
+      <select>
+        <option>Пункт 1</option>
+        <option>Пункт 2</option>
+      </select>
+    </p>
+
+  </main>
+  <footer></footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
