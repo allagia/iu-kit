@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <include src="build/img/sprite_auto.svg"></include>
+  <include style="display: none;" src="build/img/sprite_auto.svg"></include>
 
   <header class="header"></header>
   <main class="main container">
@@ -21,22 +21,32 @@
       <input type="text" id="basic-input" placeholder="Placeholder">
     </p>
 
-    <p class="input input--error">
+    <p class="input">
       <label for="input-error">Input Error</label>
-      <input type="text" id="input-error" value="Value">
+      <input type="email" id="input-error" value="Value">
     </p>
 
-    <p class="input input--focused">
+    <p class="input">
+      <label class="visually-hidden" for="input-error">Input Error</label>
+      <input type="email" id="input-error" value="Value">
+    </p>
+
+    <p class="input">
       <label for="input-focused">Input Focused</label>
       <input type="text" id="input-focused" value="Value">
     </p>
 
-    <p class="input input--disabled">
+    <p class="input">
       <label for="input-disabled">Input Disabled</label>
-      <input type="text" id="input-disabled" value="Value">
+      <input type="text" id="input-disabled" value="Value" disabled>
     </p>
 
-    <p class="input input--no-label">
+    <p class="input">
+      <label class="visually-hidden" for="input-disabled">Input Disabled</label>
+      <input type="text" id="input-disabled" value="Disabled" disabled>
+    </p>
+
+    <p class="input">
       <label class="visually-hidden" for="input-no-label">Input Basic</label>
       <input type="text" id="input-no-label" placeholder="Placeholder">
     </p>
@@ -59,12 +69,117 @@
       <input type="text" id="input-search-right" placeholder="Placeholder">
     </p>
 
-    <p class="select">
-      <select>
-        <option>Пункт 1</option>
-        <option>Пункт 2</option>
+    <p class="input input--web">
+      <label for="input-web">www.</label>
+      <input type="text" id="input-web" placeholder="2dots.co">
+    </p>
+
+
+    <p class="input">
+      <label for="select-id">Please choose:</label>
+      <select id="select-id">
+        <option>Option</option>
+        <option>Option 2</option>
       </select>
     </p>
+
+    <p class="input">
+      <label class="visually-hidden" for="select-id-1">Please choose:</label>
+      <select id="select-id-1">
+        <option>Choose</option>
+        <option>Option</option>
+        <option>Option 2</option>
+      </select>
+    </p>
+
+    <p class="textarea">
+      <label for="textarea">Textarea</label>
+      <textarea id="textarea" placeholder="Placeholder"></textarea>
+    </p>
+
+    <p class="textarea">
+      <label for="textarea-error">Textarea</label>
+      <textarea id="textarea-error" value="Value" minlength="10"></textarea>
+    </p>
+
+    <div>
+      <div style="display: flex;gap: 16px;">
+        <p class="checkbox">
+          <input type="checkbox" id="checkbox" checked>
+          <label class="checkbox__label" for="checkbox">Option</label>
+        </p>
+        <p class="checkbox">
+          <input type="checkbox" id="checkbox" checked>
+          <label class="checkbox__label" for="checkbox"></label>
+        </p>
+        <p class="checkbox">
+          <input type="checkbox" id="checkbox">
+          <label class="checkbox__label" for="checkbox"></label>
+        </p>
+        <p class="checkbox">
+          <input type="checkbox" id="checkbox" disabled>
+          <label class="checkbox__label" for="checkbox"></label>
+        </p>
+
+      </div>
+      <div style="display: flex; gap: 16px;">
+        <p class="checkbox checkbox--circle">
+          <input type="checkbox" id="checkbox-circle" checked>
+          <label for="checkbox-circle">Option</label>
+        </p>
+        <p class="checkbox checkbox--circle">
+          <input type="checkbox" id="checkbox-circle" checked>
+          <label for="checkbox-circle"></label>
+        </p>
+        <p class="checkbox checkbox--circle">
+          <input type="checkbox" id="checkbox-circle">
+          <label for="checkbox-circle"></label>
+        </p>
+        <p class="checkbox checkbox--circle">
+          <input type="checkbox" id="checkbox-circle" disabled>
+          <label for="checkbox-circle"></label>
+        </p>
+      </div>
+    </div>
+
+    <p>
+      <label class="switch">
+        <input type="checkbox" id="switch" checked>
+        <span class="switch__slider round"></span>
+        <span class="switch__title" for="switch">Option</span>
+      </label>
+    </p>
+
+    <p style="display: flex; gap: 20px;">
+      <label class="switch">
+        <input type="checkbox" id="switch" checked>
+        <span class="switch__slider round"></span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="switch">
+        <span class="switch__slider round"></span>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="switch" disabled>
+        <span class="switch__slider round"></span>
+      </label>
+    </p>
+
+    <p style="display: flex; gap: 20px;">
+      <label class="switch switch--small">
+        <input type="checkbox" id="switch" checked>
+        <span class="switch__slider round"></span>
+      </label>
+      <label class="switch switch--small">
+        <input type="checkbox" id="switch">
+        <span class="switch__slider round"></span>
+      </label>
+      <label class="switch switch--small">
+        <input type="checkbox" id="switch" disabled>
+        <span class="switch__slider round"></span>
+      </label>
+    </p>
+
 
   </main>
   <footer></footer>
