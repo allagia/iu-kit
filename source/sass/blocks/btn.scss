@@ -1,0 +1,108 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  font-size: 15px;;
+  line-height: 48px;
+
+  width: 146px;
+  height: 48px;
+
+  background-color: $blue;
+  color: $white;
+  border-color: transparent;
+  border-radius: 5px;
+  transition: all $transition-props;
+
+  &:hover {
+    background-color: transparent;
+    color: $blue;
+    border: 1px solid $blue;
+  }
+
+  svg {
+    fill: transparent;
+    stroke: $white;
+    margin: 0 0 0 10px;
+  }
+
+  path {
+    stroke: $white;
+  }
+
+  &--icon-left {
+    flex-direction: row-reverse;
+
+    svg {
+      margin: 0 10px 0 0;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 1px solid #E0E0E0;
+    color: #2C2C2C;
+  }
+
+  &--small {
+    font-size: 13px;
+    line-height: 36px;
+    width: 116px;
+    height: 36px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin: 0 0 0 9px;
+    }
+
+    &.btn--icon-left {
+      svg {
+        margin: 0 9px 0 0;
+      }
+    }
+  }
+
+  &--accent {
+    background-color: $red;
+
+    &:hover {
+      border: 1px solid $red;
+      color: $red;
+    }
+  }
+
+  &--grey {
+    color: #2C2C2C;
+    background: rgba(224, 224, 224, 0.3);
+    border: 1px solid #E0E0E0;
+  }
+
+  &--tag {
+    width: 51px;
+    height: 28px;
+
+    svg {
+      fill: currentColor;
+      opacity: 0.7;
+      margin: 0 0 0 6px;
+    }
+
+    &.btn--icon-left,
+    &.btn--icon-right {
+      width: 65px;
+    }
+  }
+
+  &:disabled {
+    background: rgba(224, 224, 224, 0.3);
+    color: #878787;
+    cursor: not-allowed;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}

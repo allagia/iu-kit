@@ -27,13 +27,18 @@
     </p>
 
     <p class="input">
-      <label class="visually-hidden" for="input-error">Input Error</label>
-      <input type="email" id="input-error" value="Value">
+      <label class="visually-hidden" for="input-error-1">Input Error</label>
+      <input type="email" id="input-error-1" value="Value">
     </p>
 
     <p class="input">
       <label for="input-focused">Input Focused</label>
-      <input type="text" id="input-focused" value="Value">
+      <input type="text" id="input-focused" value="Value" autofocus>
+    </p>
+
+    <p class="input">
+      <label class="visually-hidden" for="input-focused-1">Input Focused</label>
+      <input type="text" id="input-focused-1" value="Value" autofocus>
     </p>
 
     <p class="input">
@@ -42,8 +47,8 @@
     </p>
 
     <p class="input">
-      <label class="visually-hidden" for="input-disabled">Input Disabled</label>
-      <input type="text" id="input-disabled" value="Disabled" disabled>
+      <label class="visually-hidden" for="input-disabled-1">Input Disabled</label>
+      <input type="text" id="input-disabled-1" value="Disabled" disabled>
     </p>
 
     <p class="input">
@@ -105,39 +110,39 @@
     <div>
       <div style="display: flex;gap: 16px;">
         <p class="checkbox">
-          <input type="checkbox" id="checkbox" checked>
-          <label class="checkbox__label" for="checkbox">Option</label>
+          <input type="checkbox" id="checkbox-1" checked>
+          <label class="checkbox__label" for="checkbox-1">Option</label>
         </p>
         <p class="checkbox">
-          <input type="checkbox" id="checkbox" checked>
-          <label class="checkbox__label" for="checkbox"></label>
+          <input type="checkbox" id="checkbox-2" checked>
+          <label class="checkbox__label" for="checkbox-2"></label>
         </p>
         <p class="checkbox">
-          <input type="checkbox" id="checkbox">
-          <label class="checkbox__label" for="checkbox"></label>
+          <input type="checkbox" id="checkbox-3">
+          <label class="checkbox__label" for="checkbox-3"></label>
         </p>
         <p class="checkbox">
-          <input type="checkbox" id="checkbox" disabled>
-          <label class="checkbox__label" for="checkbox"></label>
+          <input type="checkbox" id="checkbox-4" disabled>
+          <label class="checkbox__label" for="checkbox-4"></label>
         </p>
 
       </div>
       <div style="display: flex; gap: 16px;">
         <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle" checked>
-          <label for="checkbox-circle">Option</label>
+          <input type="checkbox" id="checkbox-circle-1" checked>
+          <label for="checkbox-circle-1">Option</label>
         </p>
         <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle" checked>
-          <label for="checkbox-circle"></label>
+          <input type="checkbox" id="checkbox-circle-2" checked>
+          <label for="checkbox-circle-2"></label>
         </p>
         <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle">
-          <label for="checkbox-circle"></label>
+          <input type="checkbox" id="checkbox-circle-3">
+          <label for="checkbox-circle-3"></label>
         </p>
         <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle" disabled>
-          <label for="checkbox-circle"></label>
+          <input type="checkbox" id="checkbox-circle-4" disabled>
+          <label for="checkbox-circle-4"></label>
         </p>
       </div>
     </div>
@@ -186,6 +191,319 @@
     <div class="slider" id="slider-3"></div>
     <div class="slider slider--small-handel" id="slider-4"></div>
 
+    <h2>Buttons Big</h2>
+
+    <div style="display: flex; gap: 24px;">
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn" type="button">Download</button>
+        <button class="btn btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn" type="button" disabled>Download</button>
+        <button class="btn btn--icon-right" type="button" disabled>Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--icon-left" type="button" disabled>Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn btn--outline" type="button">Download</button>
+        <button class="btn btn--outline btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--outline btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn" type="button">Download</button>
+        <button class="btn btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+
+
+    <h2>Buttons Small</h2>
+
+    <div style="display: flex; gap: 24px;">
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn btn--small" type="button">Download</button>
+        <button class="btn btn--small btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn  btn--accent btn--small btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn btn--small" type="button" disabled>Download</button>
+        <button class="btn btn--small btn--icon-right" type="button" disabled>Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--small btn--icon-left" type="button" disabled>Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn btn--small btn--outline" type="button">Download</button>
+        <button class="btn btn--small btn--outline btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--small btn--outline btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <button class="btn btn--small" type="button">Download</button>
+        <button class="btn btn--small btn--icon-right" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="btn btn--small btn--icon-left" type="button">Download
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 24px; margin: 40px 0;">
+      <button class="btn btn--tag btn--outline btn--icon-right" type="button">Tag
+        <svg width="6px" height="6px">
+          <use xlink:href="#icon-cross-1"></use>
+        </svg>
+      </button>
+      <button class="btn btn--tag btn--icon-right" type="button">Tag
+        <svg width="6px" height="6px">
+          <use xlink:href="#icon-cross-1"></use>
+        </svg>
+      </button>
+      <button class="btn btn--tag btn--grey" type="button">Tag</button>
+      <button class="btn btn--tag" type="button">Tag</button>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="tabs">
+        <button class="tabs__item tabs__item--icon active" type="button">
+          <svg width="15px" height="15px">
+            <use xlink:href="#icon-search"></use>
+          </svg>
+        </button>
+        <button class="tabs__item tabs__item--icon" type="button">
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-download"></use>
+          </svg>
+        </button>
+        <button class="tabs__item tabs__item--icon" type="button">
+          <svg width="24px" height="24px">
+            <use xlink:href="#icon-archive"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="tabs">
+        <button class="tabs__item tabs__item--general active" type="button">Tab 1</button>
+        <button class="tabs__item tabs__item--general" type="button">Tab 1</button>
+      </div>
+
+      <div class="tabs">
+        <button class="tabs__item  tabs__item--size active" type="button">S</button>
+        <button class="tabs__item tabs__item--size" type="button">M</button>
+        <button class="tabs__item tabs__item--size" type="button">L</button>
+      </div>
+    </div>
+
+    <h2>Tabs</h2>
+
+    <div class="tabs-nav">
+      <button class="tab active" type="button">Current Tab</button>
+      <button class="tab" type="button">Current Tab</button>
+    </div>
+
+    <div class="tabs-nav tabs-nav--underline">
+      <button class="tab active" type="button">Current Tab</button>
+      <button class="tab" type="button">Second Tab</button>
+    </div>
+
+    <div class="tabs-nav tabs-nav--underline">
+      <button class="tab active" type="button">Current Tab</button>
+      <button class="tab" type="button">Second Tab</button>
+      <button class="tab" type="button">Third Tab</button>
+    </div>
+
+    <h2>Tabs & Icons</h2>
+
+    <div class="tabs-nav">
+      <button class="tab active" type="button">Current Tab
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </button>
+      <button class="tab" type="button">Current Tab
+        <svg width="24px" height="24px">
+          <use xlink:href="#icon-archive"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="tabs-nav tabs-nav--underline">
+      <button class="tab active" type="button">Current Tab
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </button>
+      <button class="tab" type="button">Second Tab
+        <svg width="24px" height="24px">
+          <use xlink:href="#icon-archive"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="tabs-nav tabs-nav--underline">
+      <button class="tab active" type="button">Current Tab
+        <svg width="15px" height="15px">
+          <use xlink:href="#icon-search"></use>
+        </svg>
+      </button>
+      <button class="tab" type="button">Second Tab
+        <svg width="24px" height="24px">
+          <use xlink:href="#icon-archive"></use>
+        </svg>
+      </button>
+      <button class="tab" type="button">Third Tab
+        <svg width="24px" height="24px">
+          <use xlink:href="#icon-download"></use>
+        </svg>
+      </button>
+    </div>
+
+    <h2>Breadcrumbs</h2>
+
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">First Section
+          <svg width="8px" height="13px">
+            <use xlink:href="#icon-breadcrumb"></use>
+          </svg>
+        </a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Second Section</a></li>
+    </ul>
+
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">First Section
+          <svg width="8px" height="13px">
+            <use xlink:href="#icon-breadcrumb"></use>
+          </svg>
+        </a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Second Section
+          <svg width="8px" height="13px">
+            <use xlink:href="#icon-breadcrumb"></use>
+          </svg>
+        </a></li>
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link">Third Section</a></li>
+    </ul>
+
+    <h2>Pagination</h2>
+
+    <div class="pagination-1" style="margin-bottom: 40px;">
+      <button class="pagination-1__btn pagination-1__btn--prev" type="button">
+        <svg width="8px" height="13px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+      <button class="pagination-1__btn pagination-1__btn--next" type="button">
+        <svg width="8px" height="13px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="pagination-1 pagination-1--round" style="margin-bottom: 40px;">
+      <button class="pagination-1__btn pagination-1__btn--prev" type="button">
+        <svg width="8px" height="13px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+      <a class="pagination-1__link">1</a>
+      <button class="pagination-1__btn pagination-1__btn--next" type="button">
+        <svg width="8px" height="13px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="pagination-3" style="margin-bottom: 40px;">
+
+      <button class="pagination-3__btn pagination-3__btn--prev" type="button">
+        <svg width="6px" height="10px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+
+      <ul class="pagination-3__list">
+        <li class="pagination-3__item"><a class="pagination-3__link active" href="#">1</a></li>
+        <li class="pagination-3__item"><a class="pagination-3__link" href="#">2</a></li>
+        <li class="pagination-3__item"><a class="pagination-3__link" href="#">3</a></li>
+        <li class="pagination-3__item"><a class="pagination-3__link" href="#">4</a></li>
+        <li class="pagination-3__item"><a class="pagination-3__link" href="#">5</a></li>
+      </ul>
+
+      <button class="pagination-3__btn pagination-3__btn--next" type="button">
+        <svg width="6px" height="10px">
+          <use xlink:href="#icon-breadcrumb"></use>
+        </svg>
+      </button>
+
+    </div>
 
   </main>
   <footer></footer>

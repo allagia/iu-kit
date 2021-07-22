@@ -23,6 +23,10 @@
     }
   }
 
+  input:focus {
+    border-color: $blue;
+  }
+
   label {
     font-size: 13px;
     line-height: 16px;
@@ -46,6 +50,10 @@ input:invalid {
   color: $red;
   background-color: rgba(255, 62, 29, 0.06);
   border: 1px solid $red;
+
+  &:focus {
+    border-color: $red;
+  }
 }
 
 input:disabled {

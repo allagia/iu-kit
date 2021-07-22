@@ -1,0 +1,9 @@
+.tabs-nav {
+  position: relative;
+  display: flex;
+  margin-bottom: 40px;
+
+  &--underline {
+    border-bottom: 1px solid #E0E0E0;
+  }
+}
