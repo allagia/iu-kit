@@ -13,6 +13,11 @@
     border-radius: 5px;
     background: rgba(224, 224, 224, 0.3);
     border: none;
+    transition: opacity $transition-props;
+
+    &:hover {
+      opacity: 0.5;
+    }
 
     svg {
       fill: transparent;
@@ -105,5 +110,74 @@
         opacity: 1;
       }
     }
+  }
+}
+
+.pagination-2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+
+  &__btn {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    width: 88px;
+    height: 36px;
+    padding: 0 14px;
+
+    color: #8B8B8B;
+    background-color: rgba(224, 224, 224, 0.3);
+    border-radius: 5px;
+    border: none;
+    transition: opacity $transition-props;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    svg {
+      fill: transparent;
+    }
+
+    &--prev {
+      flex-direction: row-reverse;
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    &--next {
+      color: $blue;
+      background-color: rgba(24, 160, 251, 0.1);
+    }
+  }
+
+  &__select {
+    width: 66px;
+    height: 36px;
+    padding: 0 14px;
+
+    color: #8B8B8B;
+    background-color: rgba(224, 224, 224, 0.3);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+
+    -webkit-appearance: none;
+    background-image: url("../img/select-down-light.svg");
+    background-repeat: no-repeat;
+    background-position: 35px center;
+    cursor: pointer;
+  }
+
+  &__total {
+    margin-left: 4px;
   }
 }
