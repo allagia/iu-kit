@@ -630,6 +630,183 @@
       </div>
     </div>
 
+    <h2>Tables</h2>
+
+    <table class="table">
+      <tr>
+        <th>Name</th>
+        <th colspan="2">Last Updated</th>
+      </tr>
+      <tr>
+        <td>Eduardo Pena</td>
+        <td>3 mins ago</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>Evan Robertson</td>
+        <td>Yesterday</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>Kathryn Lane</td>
+        <td>Dec 31, 2019</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Table Name</h2>
+
+    <table class="table table--with-checkbox">
+      <tr>
+        <th>
+          <input class="visually-hidden" type="checkbox" name="all" id="all">
+          <label for="all"></label>
+        </th>
+        <th>Name</th>
+        <th>Location</th>
+        <th colspan="2">Last Updated</th>
+      </tr>
+      <tr>
+        <td>
+          <input class="visually-hidden" type="checkbox" name="name-1" id="name-1">
+          <label for="name-1"></label>
+        </td>
+        <td>Devon Flores</td>
+        <td>Tucson, United States</td>
+        <td>3 mins ago</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="visually-hidden" type="checkbox" name="name-2" id="name-2">
+          <label for="name-2"></label>
+        </td>
+        <td>Nathan Webb</td>
+        <td>Orange, United States</td>
+        <td>Yesterday</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="visually-hidden" type="checkbox" name="name-3" id="name-3">
+          <label for="name-3"></label>
+        </td>
+        <td>Beth Black</td>
+        <td>Westminster, United States</td>
+        <td>Dec 31, 2019</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="visually-hidden" type="checkbox" name="name-4" id="name-4">
+          <label for="name-4"></label>
+        </td>
+        <td>Bernard Flores</td>
+        <td>Stamford United States</td>
+        <td>Dec 17, 2019</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="visually-hidden" type="checkbox" name="name-5" id="name-5">
+          <label for="name-5"></label>
+        </td>
+        <td>Theresa Alexander</td>
+        <td>Santa Ana United States</td>
+        <td>Nov 20, 2019</td>
+        <td>
+          <button class="table__btn" type="button">
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+            <span class="table__dot"></span>
+          </button>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Components</h2>
+
+    <div class="uploader">
+      <svg width="68px" height="68px">
+        <use xlink:href="#icon-upload"></use>
+      </svg>
+      <h3 class="uploader__title">Add Files</h3>
+      <p class="uploader__text">Drag & Drop to upload or</p>
+    </div>
+
+    <div class="uploader uploader--fail">
+      <svg width="68px" height="68px">
+        <use xlink:href="#icon-upload"></use>
+      </svg>
+      <h3 class="uploader__title">Something went wrong.</h3>
+      <p class="uploader__text">Please try again</p>
+    </div>
+
+    <div class="uploader uploader--scale">
+      <h3 class="uploader__title"><span class="uploader__percent">69</span>% uploaded</h3>
+      <div class="uploader__scale">
+        <span class="uploader__level"></span>
+      </div>
+      <p class="uploader__text">Please wait...</p>
+      <button class="uploader__btn">Cancel</button>
+    </div>
+
+    <div class="uploader uploader--round">
+      <h3 class="uploader__title">69%</h3>
+      <p class="uploader__text">Uploading ...</p>
+      <button class="uploader__btn">Cancel</button>
+    </div>
+
+    <div class="uploader uploader--done">
+      <svg width="103px" height="103px">
+        <use xlink:href="#icon-done"></use>
+      </svg>
+      <h3 class="uploader__title">Upload Complete!</h3>
+      <button class="uploader__btn">Upload New</button>
+    </div>
+
   </main>
   <footer></footer>
   <script src="js/vendor.js"></script>
