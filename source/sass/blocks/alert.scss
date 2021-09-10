@@ -29,6 +29,11 @@
     border-radius: 50%;
     border: none;
     background-color: transparent;
+    transition: opacity $transition-props;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &--dark {
@@ -102,6 +107,11 @@
     border: none;
     outline: none;
     color: inherit;
+    transition: opacity $transition-props;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &__open-btn {
@@ -111,6 +121,10 @@
 
   &__dismiss-btn {
     opacity: 0.5;
+
+    &:hover {
+      opacity: 0.2;
+    }
   }
 }
 
@@ -130,6 +144,10 @@
 
     .alert__dismiss-btn {
       opacity: 1;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 
