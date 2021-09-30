@@ -4,8 +4,11 @@
   margin: 40px 0;
 
   display: flex;
+  flex-wrap: wrap;
 
   &__item {
+    margin-bottom: 10px;
+
     &:last-of-type {
       .breadcrumbs__link {
         opacity: 0.5;

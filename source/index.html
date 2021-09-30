@@ -107,6 +107,12 @@
       <textarea id="textarea-error" value="Value" minlength="10"></textarea>
     </p>
 
+    <p class="input">
+      <label for="datepicker">Календарь</label>
+      <input id="datepicker">
+    </p>
+
+
     <div>
       <div style="display: flex;gap: 16px;">
         <p class="checkbox">
@@ -193,7 +199,7 @@
 
     <h2>Buttons Big</h2>
 
-    <div style="display: flex; gap: 24px;">
+    <div style="display: flex; flex-wrap: wrap; gap: 24px;">
 
       <div style="display: flex; flex-direction: column; gap: 24px;">
         <button class="btn" type="button">Download</button>
@@ -257,7 +263,7 @@
 
     <h2>Buttons Small</h2>
 
-    <div style="display: flex; gap: 24px;">
+    <div style="display: flex; flex-wrap: wrap; gap: 24px;">
 
       <div style="display: flex; flex-direction: column; gap: 24px;">
         <button class="btn btn--small" type="button">Download</button>
@@ -633,13 +639,15 @@
     <h2>Tables</h2>
 
     <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th colspan="2">Last Updated</th>
+        </tr>
+      </thead>
       <tr>
-        <th>Name</th>
-        <th colspan="2">Last Updated</th>
-      </tr>
-      <tr>
-        <td>Eduardo Pena</td>
-        <td>3 mins ago</td>
+        <td data-label="Name">Eduardo Pena</td>
+        <td data-label="Last Updated">3 mins ago</td>
         <td>
           <button class="table__btn" type="button">
             <span class="table__dot"></span>
@@ -649,8 +657,8 @@
         </td>
       </tr>
       <tr>
-        <td>Evan Robertson</td>
-        <td>Yesterday</td>
+        <td data-label="Name">Evan Robertson</td>
+        <td data-label="Last Updated">Yesterday</td>
         <td>
           <button class="table__btn" type="button">
             <span class="table__dot"></span>
@@ -660,8 +668,8 @@
         </td>
       </tr>
       <tr>
-        <td>Kathryn Lane</td>
-        <td>Dec 31, 2019</td>
+        <td data-label="Name">Kathryn Lane</td>
+        <td data-label="Last Updated">Dec 31, 2019</td>
         <td>
           <button class="table__btn" type="button">
             <span class="table__dot"></span>
@@ -676,23 +684,25 @@
     <p style="color: red">*настроено дерево чекбоксов</p>
 
     <table class="table table--with-checkbox">
-      <tr>
-        <th>
-          <input class="visually-hidden" type="checkbox" name="all" id="all">
-          <label for="all"></label>
-        </th>
-        <th>Name</th>
-        <th>Location</th>
-        <th colspan="2">Last Updated</th>
-      </tr>
+      <thead>
+        <tr>
+          <th>
+            <input class="visually-hidden" type="checkbox" name="all" id="all">
+            <label for="all"></label>
+          </th>
+          <th>Name</th>
+          <th>Location</th>
+          <th colspan="2">Last Updated</th>
+        </tr>
+      </thead>
       <tr>
         <td>
           <input class="visually-hidden" type="checkbox" name="name-1" id="name-1">
           <label for="name-1"></label>
         </td>
-        <td>Devon Flores</td>
-        <td>Tucson, United States</td>
-        <td>3 mins ago</td>
+        <td data-label="Name">Devon Flores</td>
+        <td data-label="Location">Tucson, United States</td>
+        <td data-label="Last Update">3 mins ago</td>
         <td>
           <button class="table__btn" type="button">
             <span class="table__dot"></span>
@@ -706,9 +716,9 @@
           <input class="visually-hidden" type="checkbox" name="name-2" id="name-2">
           <label for="name-2"></label>
         </td>
-        <td>Nathan Webb</td>
-        <td>Orange, United States</td>
-        <td>Yesterday</td>
+        <td data-label="Name">Nathan Webb</td>
+        <td data-label="Location">Orange, United States</td>
+        <td data-label="Last Update">Yesterday</td>
         <td>
           <button class="table__btn" type="button">
             <span class="table__dot"></span>
@@ -722,9 +732,9 @@
           <input class="visually-hidden" type="checkbox" name="name-3" id="name-3">
           <label for="name-3"></label>
         </td>
-        <td>Beth Black</td>
-        <td>Westminster, United States</td>
-        <td>Dec 31, 2019</td>
+        <td data-label="Name">Beth Black</td>
+        <td data-label="Location">Westminster, United States</td>
+        <td data-label="Last Update">Dec 31, 2019</td>
         <td>
           <button class="table__btn" type="button">
             <span class="table__dot"></span>
@@ -738,9 +748,9 @@
           <input class="visually-hidden" type="checkbox" name="name-4" id="name-4">
           <label for="name-4"></label>
         </td>
-        <td>Bernard Flores</td>
-        <td>Stamford United States</td>
-        <td>Dec 17, 2019</td>
+        <td data-label="Name">Bernard Flores</td>
+        <td data-label="Location">Stamford United States</td>
+        <td data-label="Last Update">Dec 17, 2019</td>
         <td>
           <button class="table__btn" type="button">
             <span class="table__dot"></span>
@@ -754,9 +764,9 @@
           <input class="visually-hidden" type="checkbox" name="name-5" id="name-5">
           <label for="name-5"></label>
         </td>
-        <td>Theresa Alexander</td>
-        <td>Santa Ana United States</td>
-        <td>Nov 20, 2019</td>
+        <td data-label="Name">Theresa Alexander</td>
+        <td data-label="Location">Santa Ana United States</td>
+        <td data-label="Last Update">Nov 20, 2019</td>
         <td>
           <button class="table__btn" type="button">
             <span class="table__dot"></span>
@@ -785,8 +795,10 @@
       <p class="uploader__text">Please try again</p>
     </div>
 
+    <p style="color: red;">*При изменении процента загрузки (в разметке) изменяется шкала</p>
+
     <div class="uploader uploader--scale">
-      <h3 class="uploader__title"><span class="uploader__percent">1</span>% uploaded</h3>
+      <h3 class="uploader__title"><span class="uploader__percent">10</span>% uploaded</h3>
       <div class="uploader__scale">
         <span class="uploader__level"></span>
       </div>
@@ -869,9 +881,8 @@
           </div>
         </li>
       </ul>
-
-
     </div>
+
 
   </main>
   <footer></footer>

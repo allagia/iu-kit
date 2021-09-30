@@ -4,15 +4,11 @@
   padding: 50px;
   margin: 0 auto;
 
-  // @include desktop {
-  //   padding: 0 50px;
-  // }
+  @include tablet {
+    padding: 0 25px;
+  }
 
-  // @include tablet {
-  //   padding: 0 25px;
-  // }
-
-  // @include mobile {
-  //   padding: 0 20px;
-  // }
+  @include mobile {
+    padding: 0 20px;
+  }
 }

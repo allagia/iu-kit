@@ -67,16 +67,24 @@
 .wizard-nav-2 {
   @include list-reset;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  // align-items: center;
+  // justify-content: space-between;
   max-width: 402px;
   padding: 20px 0;
+
+  @include mobile {
+    max-width: 100%;
+  }
 
   &__item {
     position: relative;
     width: 134px;
     height: 2px;
     background-color: #E0E0E0;
+
+    @include mobile {
+      width: 100px;
+    }
 
     &::after {
       content: "";

@@ -5,3 +5,4 @@
 // =require modules/pagination.js
 // =require modules/checkbox-tree.js
 // =require modules/uploader-animation.js
+// =require modules/calendar.js

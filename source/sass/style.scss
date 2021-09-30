@@ -1,5 +1,7 @@
 @import "vendor/normalize.scss";
 @import "vendor/nouislider.scss";
+@import "vendor/litepicker.scss";
+// @import "vendor/bulma-calendar.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
@@ -23,3 +25,4 @@
 @import "blocks/table.scss";
 @import "blocks/uploader.scss";
 @import "blocks/uploaded-files.scss";
+@import "blocks/litepicker-custom.scss"

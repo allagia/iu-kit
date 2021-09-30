@@ -53,8 +53,10 @@
     "node": "8.15"
   },
   "dependencies": {
+    "bulma-calendar": "^6.1.12",
     "del": "^4.1.1",
     "gulp-include": "^2.4.1",
+    "litepicker": "^2.0.11",
     "plumber": "^0.4.8"
   }
 }

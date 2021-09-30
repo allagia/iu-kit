@@ -175,3 +175,11 @@ let level = document.querySelector('.uploader__level');
 
 level.style.width = percent.textContent + '%';
 
+window.disableLitepickerStyles = true;
+
+new Litepicker({
+  element: document.getElementById('datepicker'),
+  singleMode: false,
+  position: 'bottom',
+})
+

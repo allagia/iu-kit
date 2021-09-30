@@ -4,10 +4,13 @@
   height: 2px;
   margin: 80px 0;
 
-
   background-color: #E0E0E0;
   border-color: #E0E0E0;
   border: none;
+
+  @include mobile {
+    width: 100%;
+  }
 
 
   .noUi-connect {

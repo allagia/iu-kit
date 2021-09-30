@@ -8,6 +8,18 @@
   border-spacing: 0;
   overflow: hidden;
 
+  thead {
+    @include mobile {
+      display: none;
+    }
+  }
+
+  tr {
+    @include mobile {
+      display: block;
+      padding-top: 15px;
+    }
+  }
 
   th {
 
@@ -42,6 +54,15 @@
 
     &:last-of-type {
       text-align: right;
+    }
+
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+
+      &::before {
+        content: attr(data-label);
+      }
     }
   }
 
@@ -80,6 +101,13 @@
 
 
 .table--with-checkbox {
+
+  tr {
+    @include mobile {
+      padding-top: 0;
+    }
+  }
+
   th {
     &:first-child {
       width: auto;
@@ -111,6 +139,11 @@
     height: 16px;
     border: 1px solid #E0E0E0;
     border-radius: 4px;
+
+    @include mobile {
+      right: -10px;
+      left: auto;
+    }
   }
 
   label::after {
