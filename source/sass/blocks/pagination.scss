@@ -122,6 +122,10 @@
   font-size: 13px;
   line-height: 16px;
 
+  @include mobile {
+    gap: 10px;
+  }
+
   &__btn {
 
     display: flex;

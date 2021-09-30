@@ -159,6 +159,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+
+    @include mobile {
+      left: auto;
+      right: -4px;
+    }
   }
 
   input:indeterminate + label::after {
