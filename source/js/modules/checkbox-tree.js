@@ -1,13 +1,12 @@
-const tableWithCheckbox = document.querySelector('.table--with-checkbox');
-const mainInput = tableWithCheckbox.querySelector('input[name^=all');
-// const list = tableWithCheckbox.querySelectorAll('.standards-checkbox__list');
-// const nodes = list.querySelectorAll('input[name^=name');
-function checkAll(obj) {
-  const nodes = tableWithCheckbox.querySelectorAll('input[name^=name');
+var tableWithCheckbox = document.querySelector('.table--with-checkbox');
+var mainInput = tableWithCheckbox.querySelector('input[name^=all');
 
-  for (let i = 0; i < nodes.length; i++) {
+function checkAll(obj) {
+  var nodes = tableWithCheckbox.querySelectorAll('input[name^=name');
+
+  for (var i = 0; i < nodes.length; i++) {
     nodes[i].onclick = function () {
-      const allChecked = tableWithCheckbox.querySelectorAll('input[name^=name]:checked').length;
+      var allChecked = tableWithCheckbox.querySelectorAll('input[name^=name]:checked').length;
       mainInput.checked = allChecked === nodes.length;
       mainInput.indeterminate = allChecked > 0 && allChecked < nodes.length;
     };

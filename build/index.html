@@ -15,6 +15,8 @@
 <path d="M2.92205 6.30863L2.90861 6.29902L5.3096 3.10657L5.3101 3.1059C5.58912 2.73363 6.0385 2.50903 6.508 2.50903H17.508C17.9791 2.50903 18.4295 2.73545 18.7101 3.11188L18.7105 3.11237L21.1053 6.31638L21.0935 6.32544L21.3866 6.72011C21.4672 6.82871 21.5 6.92251 21.5 7.01003V18.01C21.5 18.8369 20.8269 19.51 20 19.51H4C3.17314 19.51 2.5 18.8369 2.5 18.01V7.01003C2.5 6.92206 2.53338 6.82686 2.615 6.71803L2.92205 6.30863ZM6.508 3.51003H6.2584L6.10838 3.70952L4.60438 5.70952L4.0024 6.51003H5.004H19.003H20.001L19.4035 5.71067L17.9085 3.71067L17.7585 3.51003H17.508H6.508ZM3.5 18.01V18.51H4H20.002H20.5021L20.502 18.0099L20.5 8.00993L20.4999 7.51003H20H4H3.5V8.01003V18.01Z" fill="#2C2C2C" stroke="currentColor"></path>
 </symbol><symbol id="icon-breadcrumb" viewBox="0 0 8 13">
 <path d="M1 12L7 6.5L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol><symbol id="icon-close-2" viewBox="0 0 10 10">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.29289 0.29289C0.68342 -0.09763 1.31658 -0.09763 1.70711 0.29289L5 3.5858L8.2929 0.29289C8.6834 -0.09763 9.3166 -0.09763 9.7071 0.29289C10.0976 0.68342 10.0976 1.31658 9.7071 1.70711L6.4142 5L9.7071 8.2929C10.0976 8.6834 10.0976 9.3166 9.7071 9.7071C9.3166 10.0976 8.6834 10.0976 8.2929 9.7071L5 6.4142L1.70711 9.7071C1.31658 10.0976 0.68342 10.0976 0.29289 9.7071C-0.09763 9.3166 -0.09763 8.6834 0.29289 8.2929L3.5858 5L0.29289 1.70711C-0.09763 1.31658 -0.09763 0.68342 0.29289 0.29289Z" fill="#ffffff"></path>
 </symbol><symbol id="icon-close" viewBox="0 0 10 10">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.29289 0.29289C0.68342 -0.09763 1.31658 -0.09763 1.70711 0.29289L5 3.5858L8.2929 0.29289C8.6834 -0.09763 9.3166 -0.09763 9.7071 0.29289C10.0976 0.68342 10.0976 1.31658 9.7071 1.70711L6.4142 5L9.7071 8.2929C10.0976 8.6834 10.0976 9.3166 9.7071 9.7071C9.3166 10.0976 8.6834 10.0976 8.2929 9.7071L5 6.4142L1.70711 9.7071C1.31658 10.0976 0.68342 10.0976 0.29289 9.7071C-0.09763 9.3166 -0.09763 8.6834 0.29289 8.2929L3.5858 5L0.29289 1.70711C-0.09763 1.31658 -0.09763 0.68342 0.29289 0.29289Z" fill="#currentColor"></path>
 </symbol><symbol id="icon-cross-1" viewBox="0 0 212.982 212.982">
@@ -74,7 +76,7 @@
 
     <p class="input">
       <label class="visually-hidden" for="input-focused-1">Input Focused</label>
-      <input type="text" id="input-focused-1" value="Value" autofocus="">
+      <input type="text" id="input-focused-1" value="Value">
     </p>
 
     <p class="input">
@@ -118,7 +120,7 @@
 
     <p class="input">
       <label for="select-id">Please choose:</label>
-      <select id="select-id">
+      <select id="select-id" class="select">
         <option>Option</option>
         <option>Option 2</option>
       </select>
@@ -126,7 +128,7 @@
 
     <p class="input">
       <label class="visually-hidden" for="select-id-1">Please choose:</label>
-      <select id="select-id-1">
+      <select id="select-id-1" class="select">
         <option>Choose</option>
         <option>Option</option>
         <option>Option 2</option>
@@ -140,7 +142,7 @@
 
     <p class="textarea">
       <label for="textarea-error">Textarea</label>
-      <textarea id="textarea-error" value="Value" minlength="10"></textarea>
+      <textarea id="textarea-error" minlength="10"></textarea>
     </p>
 
     <p class="input">
@@ -151,40 +153,40 @@
 
     <div>
       <div style="display: flex;gap: 16px;">
-        <p class="checkbox">
-          <input type="checkbox" id="checkbox-1" checked="">
-          <label class="checkbox__label" for="checkbox-1">Option</label>
+        <p class="radio">
+          <input type="radio" id="radio-1" checked="">
+          <label class="radio__label" for="radio-1">Option</label>
         </p>
-        <p class="checkbox">
-          <input type="checkbox" id="checkbox-2" checked="">
-          <label class="checkbox__label" for="checkbox-2"></label>
+        <p class="radio">
+          <input type="radio" id="radio-2" name="square-btn" checked="">
+          <label class="radio__label" for="radio-2"></label>
         </p>
-        <p class="checkbox">
-          <input type="checkbox" id="checkbox-3">
-          <label class="checkbox__label" for="checkbox-3"></label>
+        <p class="radio">
+          <input type="radio" id="radio-3" name="square-btn">
+          <label class="radio__label" for="radio-3"></label>
         </p>
-        <p class="checkbox">
-          <input type="checkbox" id="checkbox-4" disabled="">
-          <label class="checkbox__label" for="checkbox-4"></label>
+        <p class="radio">
+          <input type="radio" id="radio-4" name="square-btn" disabled="">
+          <label class="radio__label" for="radio-4"></label>
         </p>
 
       </div>
       <div style="display: flex; gap: 16px;">
-        <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle-1" checked="">
-          <label for="checkbox-circle-1">Option</label>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-1" checked="">
+          <label for="radio-circle-1">Option</label>
         </p>
-        <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle-2" checked="">
-          <label for="checkbox-circle-2"></label>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-2" name="round-btn" checked="">
+          <label for="radio-circle-2"></label>
         </p>
-        <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle-3">
-          <label for="checkbox-circle-3"></label>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-3" name="round-btn">
+          <label for="radio-circle-3"></label>
         </p>
-        <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle-4" disabled="">
-          <label for="checkbox-circle-4"></label>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-4" name="round-btn" disabled="">
+          <label for="radio-circle-4"></label>
         </p>
       </div>
     </div>
@@ -193,36 +195,36 @@
       <label class="switch">
         <input type="checkbox" id="switch" checked="">
         <span class="switch__slider round"></span>
-        <span class="switch__title" for="switch">Option</span>
+        <span class="switch__title">Option</span>
       </label>
     </p>
 
     <p style="display: flex; gap: 20px;">
       <label class="switch">
-        <input type="checkbox" id="switch" checked="">
+        <input type="checkbox" id="switch-1" checked="">
         <span class="switch__slider round"></span>
       </label>
       <label class="switch">
-        <input type="checkbox" id="switch">
+        <input type="checkbox" id="switch-2">
         <span class="switch__slider round"></span>
       </label>
       <label class="switch">
-        <input type="checkbox" id="switch" disabled="">
+        <input type="checkbox" id="switch-3" disabled="">
         <span class="switch__slider round"></span>
       </label>
     </p>
 
     <p style="display: flex; gap: 20px;">
       <label class="switch switch--small">
-        <input type="checkbox" id="switch" checked="">
+        <input type="checkbox" id="switch-4" checked="">
         <span class="switch__slider round"></span>
       </label>
       <label class="switch switch--small">
-        <input type="checkbox" id="switch">
+        <input type="checkbox" id="switch-5">
         <span class="switch__slider round"></span>
       </label>
       <label class="switch switch--small">
-        <input type="checkbox" id="switch" disabled="">
+        <input type="checkbox" id="switch-6" disabled="">
         <span class="switch__slider round"></span>
       </label>
     </p>
@@ -361,14 +363,18 @@
 
     <div style="display: flex; flex-direction: column; gap: 24px; margin: 40px 0;">
       <button class="btn btn--tag btn--outline btn--icon-right" type="button">Tag
-        <svg width="6px" height="6px">
-          <use xlink:href="#icon-cross-1"></use>
-        </svg>
+        <span class="btn__close-icon">
+          <svg width="6px" height="6px">
+            <use xlink:href="#icon-cross-1"></use>
+          </svg>
+        </span>
       </button>
       <button class="btn btn--tag btn--icon-right" type="button">Tag
-        <svg width="6px" height="6px">
-          <use xlink:href="#icon-cross-1"></use>
-        </svg>
+        <span class="btn__close-icon">
+          <svg width="6px" height="6px">
+            <use xlink:href="#icon-cross-1"></use>
+          </svg>
+        </span>
       </button>
       <button class="btn btn--tag btn--grey" type="button">Tag</button>
       <button class="btn btn--tag" type="button">Tag</button>
@@ -554,7 +560,7 @@
         </svg>
       </button>
 
-      <select class="pagination-2__select" name="page-number" id="page-number">
+      <select class="pagination-2__select select" name="page-number" id="page-number">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -815,34 +821,38 @@
 
     <h2>Components</h2>
 
-    <div class="uploader">
+    <input class="visually-hidden" type="file" id="file-1">
+    <label class="uploader" for="file-1">
       <svg width="68px" height="68px">
         <use xlink:href="#icon-upload"></use>
       </svg>
-      <h3 class="uploader__title">Add Files</h3>
-      <p class="uploader__text">Drag & Drop to upload or</p>
-    </div>
+      <span class="uploader__title">Add Files</span>
+      <span class="uploader__text">Drag & Drop to upload or</span>
+    </label>
 
-    <div class="uploader uploader--fail">
+    <input class="visually-hidden" type="file" id="file-2">
+    <label class="uploader uploader--fail" for="file-2">
       <svg width="68px" height="68px">
         <use xlink:href="#icon-upload"></use>
       </svg>
-      <h3 class="uploader__title">Something went wrong.</h3>
-      <p class="uploader__text">Please try again</p>
-    </div>
+      <span class="uploader__title">Something went wrong.</span>
+      <span class="uploader__text">Please try again</span>
+    </label>
 
     <p style="color: red;">*При изменении процента загрузки (в разметке) изменяется шкала</p>
 
-    <div class="uploader uploader--scale">
-      <h3 class="uploader__title"><span class="uploader__percent">10</span>% uploaded</h3>
-      <div class="uploader__scale">
+    <input class="visually-hidden" type="file" id="file-3">
+    <label class="uploader uploader--scale" for="file-3">
+      <span class="uploader__title"><span class="uploader__percent">40</span>% uploaded</span>
+      <span class="uploader__scale">
         <span class="uploader__level"></span>
-      </div>
-      <p class="uploader__text">Please wait...</p>
-      <button class="uploader__btn">Cancel</button>
-    </div>
+      </span>
+      <span class="uploader__text">Please wait...</span>
+      <span class="uploader__btn">Cancel</span>
+    </label>
 
-    <div class="uploader uploader--round">
+    <input class="visually-hidden" type="file" id="file-4">
+    <label class="uploader uploader--round" for="file-4">
       <svg viewBox="0 0 36 36" class="circular-chart">
         <path class="circle-bg" d="M18 2.0845
                          a 15.9155 15.9155 0 0 1 0 31.831
@@ -852,17 +862,18 @@
                          a 15.9155 15.9155 0 0 1 0 -31.831"></path>
         <text x="18" y="20.35" class="percentage">65%</text>
       </svg>
-      <p class="uploader__text">Uploading ...</p>
-      <button class="uploader__btn">Cancel</button>
-    </div>
+      <span class="uploader__text">Uploading ...</span>
+      <span class="uploader__btn">Cancel</span>
+    </label>
 
-    <div class="uploader uploader--done">
+    <input class="visually-hidden" type="file" id="file-5">
+    <label class="uploader uploader--done" for="file-5">
       <svg width="103px" height="103px">
         <use xlink:href="#icon-done"></use>
       </svg>
-      <h3 class="uploader__title">Upload Complete!</h3>
-      <button class="uploader__btn">Upload New</button>
-    </div>
+      <span class="uploader__title">Upload Complete!</span>
+      <span class="uploader__btn">Upload New</span>
+    </label>
 
     <div class="uploader uploaded-files">
       <div class="uploaded-files__header">

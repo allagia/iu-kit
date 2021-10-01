@@ -1,3 +1,4 @@
+
 .uploader {
   display: flex;
   flex-direction: column;
@@ -11,6 +12,7 @@
   border: 1px dashed #E0E0E0;
   border-radius: 5px;
   color: $black;
+  cursor: pointer;
 
   &__title {
     font-weight: 500;
@@ -44,45 +46,8 @@
     width: 69%;
     height: 100%;
     background-color: $blue;
-
-    // animation: load 3s infinite linear;
   }
 
-  // &__round {
-  //   // position: relative;
-  //   width: 112px;
-  //   height: 112px;
-  //   border-radius: 50%;
-  //   border: 6px solid #E0E0E0;
-  //   border-top: 6px solid $blue;
-
-  //   // overflow: hidden;
-  // }
-
-  // &__level-round {
-  //   position: absolute;
-  //   left: -6px;
-  //   top: -6px;
-  //   display: block;
-  //   width: 112px;
-  //   height: 112px;
-  //   border-radius: 50%;
-  //   border: 6px solid $blue;
-  // }
-
-  // .viewbox {
-  //   width: 50%;
-  // }
-
-  // #progress {
-  //   stroke-dasharray: 296 296;
-  //   stroke-dashoffset: 296;
-  //   animation: grow 5s ease-out infinite;
-  // }
-
-  // @keyframes grow {
-  //   100% { stroke-dashoffset: 0; }
-  // }
 
   .circular-chart {
     display: block;

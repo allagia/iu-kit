@@ -6,3 +6,4 @@
 // =require modules/checkbox-tree.js
 // =require modules/uploader-animation.js
 // =require modules/calendar.js
+// =require modules/select.js

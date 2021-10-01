@@ -1,16 +1,16 @@
 // анимация (изменение длинны загрузки) происходит после изменений процента загрузки в разметке
 
 // анимация круговой загрузки
-let percentageEntity = document.querySelector('.percentage');
-let textEntity = document.querySelector('.circle');
+var percentageEntity = document.querySelector('.percentage');
+var textEntity = document.querySelector('.circle');
 
-let percentage = percentageEntity.textContent;
+var percentage = percentageEntity.textContent;
 
-let x = parseInt(percentage.replace(/[^\d]/g, ''));
+var x = parseInt(percentage.replace(/[^\d]/g, ''));
 
-let attribute = textEntity.getAttribute('stroke-dasharray');
+var attribute = textEntity.getAttribute('stroke-dasharray');
 
-let attributeValue = attribute.substring(0, 2);
+var attributeValue = attribute.substring(0, 2);
 
 if (x !== attributeValue) {
   textEntity.setAttribute('stroke-dasharray', x + ', 100');
@@ -18,8 +18,8 @@ if (x !== attributeValue) {
 
 
 // анимация прямой загрузки
-let percent = document.querySelector('.uploader__percent');
+var percent = document.querySelector('.uploader__percent');
 
-let level = document.querySelector('.uploader__level');
+var level = document.querySelector('.uploader__level');
 
 level.style.width = percent.textContent + '%';

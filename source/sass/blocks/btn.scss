@@ -32,6 +32,10 @@
     stroke: $white;
   }
 
+  &__close-icon {
+    display: flex;
+  }
+
   &--icon-left {
     flex-direction: row-reverse;
 
@@ -83,11 +87,11 @@
   &--tag {
     width: 51px;
     height: 28px;
+    line-height: 28px;
 
     svg {
       fill: currentColor;
       opacity: 0.7;
-      margin: 0 0 0 6px;
     }
 
     &.btn--icon-left,

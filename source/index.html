@@ -38,7 +38,7 @@
 
     <p class="input">
       <label class="visually-hidden" for="input-focused-1">Input Focused</label>
-      <input type="text" id="input-focused-1" value="Value" autofocus>
+      <input type="text" id="input-focused-1" value="Value">
     </p>
 
     <p class="input">
@@ -82,7 +82,7 @@
 
     <p class="input">
       <label for="select-id">Please choose:</label>
-      <select id="select-id">
+      <select id="select-id" class="select">
         <option>Option</option>
         <option>Option 2</option>
       </select>
@@ -90,7 +90,7 @@
 
     <p class="input">
       <label class="visually-hidden" for="select-id-1">Please choose:</label>
-      <select id="select-id-1">
+      <select id="select-id-1" class="select">
         <option>Choose</option>
         <option>Option</option>
         <option>Option 2</option>
@@ -104,7 +104,7 @@
 
     <p class="textarea">
       <label for="textarea-error">Textarea</label>
-      <textarea id="textarea-error" value="Value" minlength="10"></textarea>
+      <textarea id="textarea-error" minlength="10"></textarea>
     </p>
 
     <p class="input">
@@ -115,40 +115,40 @@
 
     <div>
       <div style="display: flex;gap: 16px;">
-        <p class="checkbox">
-          <input type="checkbox" id="checkbox-1" checked>
-          <label class="checkbox__label" for="checkbox-1">Option</label>
+        <p class="radio">
+          <input type="radio" id="radio-1" checked>
+          <label class="radio__label" for="radio-1">Option</label>
         </p>
-        <p class="checkbox">
-          <input type="checkbox" id="checkbox-2" checked>
-          <label class="checkbox__label" for="checkbox-2"></label>
+        <p class="radio">
+          <input type="radio" id="radio-2" name="square-btn" checked>
+          <label class="radio__label" for="radio-2"></label>
         </p>
-        <p class="checkbox">
-          <input type="checkbox" id="checkbox-3">
-          <label class="checkbox__label" for="checkbox-3"></label>
+        <p class="radio">
+          <input type="radio" id="radio-3" name="square-btn">
+          <label class="radio__label" for="radio-3"></label>
         </p>
-        <p class="checkbox">
-          <input type="checkbox" id="checkbox-4" disabled>
-          <label class="checkbox__label" for="checkbox-4"></label>
+        <p class="radio">
+          <input type="radio" id="radio-4" name="square-btn" disabled>
+          <label class="radio__label" for="radio-4"></label>
         </p>
 
       </div>
       <div style="display: flex; gap: 16px;">
-        <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle-1" checked>
-          <label for="checkbox-circle-1">Option</label>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-1" checked>
+          <label for="radio-circle-1">Option</label>
         </p>
-        <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle-2" checked>
-          <label for="checkbox-circle-2"></label>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-2" name="round-btn" checked>
+          <label for="radio-circle-2"></label>
         </p>
-        <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle-3">
-          <label for="checkbox-circle-3"></label>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-3" name="round-btn">
+          <label for="radio-circle-3"></label>
         </p>
-        <p class="checkbox checkbox--circle">
-          <input type="checkbox" id="checkbox-circle-4" disabled>
-          <label for="checkbox-circle-4"></label>
+        <p class="radio radio--circle">
+          <input type="radio" id="radio-circle-4" name="round-btn" disabled>
+          <label for="radio-circle-4"></label>
         </p>
       </div>
     </div>
@@ -157,36 +157,36 @@
       <label class="switch">
         <input type="checkbox" id="switch" checked>
         <span class="switch__slider round"></span>
-        <span class="switch__title" for="switch">Option</span>
+        <span class="switch__title">Option</span>
       </label>
     </p>
 
     <p style="display: flex; gap: 20px;">
       <label class="switch">
-        <input type="checkbox" id="switch" checked>
+        <input type="checkbox" id="switch-1" checked>
         <span class="switch__slider round"></span>
       </label>
       <label class="switch">
-        <input type="checkbox" id="switch">
+        <input type="checkbox" id="switch-2">
         <span class="switch__slider round"></span>
       </label>
       <label class="switch">
-        <input type="checkbox" id="switch" disabled>
+        <input type="checkbox" id="switch-3" disabled>
         <span class="switch__slider round"></span>
       </label>
     </p>
 
     <p style="display: flex; gap: 20px;">
       <label class="switch switch--small">
-        <input type="checkbox" id="switch" checked>
+        <input type="checkbox" id="switch-4" checked>
         <span class="switch__slider round"></span>
       </label>
       <label class="switch switch--small">
-        <input type="checkbox" id="switch">
+        <input type="checkbox" id="switch-5">
         <span class="switch__slider round"></span>
       </label>
       <label class="switch switch--small">
-        <input type="checkbox" id="switch" disabled>
+        <input type="checkbox" id="switch-6" disabled>
         <span class="switch__slider round"></span>
       </label>
     </p>
@@ -325,14 +325,18 @@
 
     <div style="display: flex; flex-direction: column; gap: 24px; margin: 40px 0;">
       <button class="btn btn--tag btn--outline btn--icon-right" type="button">Tag
-        <svg width="6px" height="6px">
-          <use xlink:href="#icon-cross-1"></use>
-        </svg>
+        <span class="btn__close-icon">
+          <svg width="6px" height="6px">
+            <use xlink:href="#icon-cross-1"></use>
+          </svg>
+        </span>
       </button>
       <button class="btn btn--tag btn--icon-right" type="button">Tag
-        <svg width="6px" height="6px">
-          <use xlink:href="#icon-cross-1"></use>
-        </svg>
+        <span class="btn__close-icon">
+          <svg width="6px" height="6px">
+            <use xlink:href="#icon-cross-1"></use>
+          </svg>
+        </span>
       </button>
       <button class="btn btn--tag btn--grey" type="button">Tag</button>
       <button class="btn btn--tag" type="button">Tag</button>
@@ -518,7 +522,7 @@
         </svg>
       </button>
 
-      <select class="pagination-2__select" name="page-number" id="page-number">
+      <select class="pagination-2__select select" name="page-number" id="page-number">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -779,34 +783,38 @@
 
     <h2>Components</h2>
 
-    <div class="uploader">
+    <input class="visually-hidden" type="file" id="file-1">
+    <label class="uploader" for="file-1">
       <svg width="68px" height="68px">
         <use xlink:href="#icon-upload"></use>
       </svg>
-      <h3 class="uploader__title">Add Files</h3>
-      <p class="uploader__text">Drag & Drop to upload or</p>
-    </div>
+      <span class="uploader__title">Add Files</span>
+      <span class="uploader__text">Drag & Drop to upload or</span>
+    </label>
 
-    <div class="uploader uploader--fail">
+    <input class="visually-hidden" type="file" id="file-2">
+    <label class="uploader uploader--fail" for="file-2">
       <svg width="68px" height="68px">
         <use xlink:href="#icon-upload"></use>
       </svg>
-      <h3 class="uploader__title">Something went wrong.</h3>
-      <p class="uploader__text">Please try again</p>
-    </div>
+      <span class="uploader__title">Something went wrong.</span>
+      <span class="uploader__text">Please try again</span>
+    </label>
 
     <p style="color: red;">*При изменении процента загрузки (в разметке) изменяется шкала</p>
 
-    <div class="uploader uploader--scale">
-      <h3 class="uploader__title"><span class="uploader__percent">10</span>% uploaded</h3>
-      <div class="uploader__scale">
+    <input class="visually-hidden" type="file" id="file-3">
+    <label class="uploader uploader--scale" for="file-3">
+      <span class="uploader__title"><span class="uploader__percent">40</span>% uploaded</span>
+      <span class="uploader__scale">
         <span class="uploader__level"></span>
-      </div>
-      <p class="uploader__text">Please wait...</p>
-      <button class="uploader__btn">Cancel</button>
-    </div>
+      </span>
+      <span class="uploader__text">Please wait...</span>
+      <span class="uploader__btn">Cancel</span>
+    </label>
 
-    <div class="uploader uploader--round">
+    <input class="visually-hidden" type="file" id="file-4">
+    <label class="uploader uploader--round" for="file-4">
       <svg viewBox="0 0 36 36" class="circular-chart">
         <path class="circle-bg" d="M18 2.0845
                          a 15.9155 15.9155 0 0 1 0 31.831
@@ -816,17 +824,18 @@
                          a 15.9155 15.9155 0 0 1 0 -31.831" />
         <text x="18" y="20.35" class="percentage">65%</text>
       </svg>
-      <p class="uploader__text">Uploading ...</p>
-      <button class="uploader__btn">Cancel</button>
-    </div>
+      <span class="uploader__text">Uploading ...</span>
+      <span class="uploader__btn">Cancel</span>
+    </label>
 
-    <div class="uploader uploader--done">
+    <input class="visually-hidden" type="file" id="file-5">
+    <label class="uploader uploader--done" for="file-5">
       <svg width="103px" height="103px">
         <use xlink:href="#icon-done"></use>
       </svg>
-      <h3 class="uploader__title">Upload Complete!</h3>
-      <button class="uploader__btn">Upload New</button>
-    </div>
+      <span class="uploader__title">Upload Complete!</span>
+      <span class="uploader__btn">Upload New</span>
+    </label>
 
     <div class="uploader uploaded-files">
       <div class="uploaded-files__header">

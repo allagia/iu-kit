@@ -1,7 +1,7 @@
 @import "vendor/normalize.scss";
 @import "vendor/nouislider.scss";
 @import "vendor/litepicker.scss";
-// @import "vendor/bulma-calendar.scss";
+@import "vendor/choices.scss";
 @import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
@@ -9,7 +9,7 @@
 @import "global/container.scss";
 @import "blocks/input.scss";
 @import "blocks/textarea.scss";
-@import "blocks/checkbox.scss";
+@import "blocks/radio.scss";
 @import "blocks/switch.scss";
 @import "blocks/slider.scss";
 @import "blocks/btn.scss";
@@ -25,4 +25,5 @@
 @import "blocks/table.scss";
 @import "blocks/uploader.scss";
 @import "blocks/uploaded-files.scss";
-@import "blocks/litepicker-custom.scss"
+@import "blocks/litepicker-custom.scss";
+@import "blocks/select-custom.scss";
