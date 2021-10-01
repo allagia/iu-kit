@@ -1,0 +1,46 @@
+.breadcrumbs {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-of-type {
+      .breadcrumbs__link {
+        opacity: 0.5;
+        cursor: text;
+
+        &:hover {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black;
+    transition: color $transition-props;
+
+    &:hover {
+      color: $blue;
+
+      svg {
+        color: $black;
+        opacity: 0.5;
+      }
+    }
+
+    svg {
+      fill: transparent;
+      margin: 0 12px;
+      transition: all $transition-props;
+    }
+  }
+}

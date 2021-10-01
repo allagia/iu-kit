@@ -1,0 +1,51 @@
+.tabs {
+  display: flex;
+  overflow: hidden;
+
+  &__item {
+    width: 134px;
+    height: 48px;
+    border: none;
+    border: 1px solid #E0E0E0;
+    background-color: transparent;
+    transition: opacity $transition-props;
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &:first-of-type {
+      border-radius: 5px 0 0 5px;
+    }
+
+    &:nth-of-type(2) {
+      margin: 0 -1px;
+    }
+
+    &:last-of-type {
+      border-radius: 0 5px 5px 0;
+    }
+
+    svg {
+      fill: transparent;
+    }
+
+    &.active {
+      background-color: $blue;
+      color: white;
+      border-color: $blue;
+
+      & + .tabs__item {
+        border-left: none;
+      }
+    }
+
+    &--icon {
+      width: 56px;
+    }
+
+    &--size {
+      width: 106px;
+    }
+  }
+}

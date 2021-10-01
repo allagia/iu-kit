@@ -1,0 +1,153 @@
+.wizard-nav-1 {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 268px;
+  padding: 20px 0;
+
+  &__item {
+    position: relative;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+
+    padding: 22px 0;
+
+    opacity: 0.5;
+    color: $black;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: -29px;
+      width: 100px;
+      height: 2px;
+      background-color: #E0E0E0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 14px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #E0E0E0;
+    }
+
+    &:first-of-type {
+      &::before {
+        width: 64px;
+        left: 20px;
+      }
+    }
+
+    &:last-of-type {
+      &::before {
+        width: 64px;
+        right: 20px;
+        left: auto;
+      }
+    }
+
+    &.active {
+      opacity: 1;
+
+      &::before,
+      &::after {
+        background-color: $blue;
+      }
+    }
+  }
+}
+
+.wizard-nav-2 {
+  @include list-reset;
+  display: flex;
+  // align-items: center;
+  // justify-content: space-between;
+  max-width: 402px;
+  padding: 20px 0;
+
+  @include mobile {
+    max-width: 100%;
+  }
+
+  &__item {
+    position: relative;
+    width: 134px;
+    height: 2px;
+    background-color: #E0E0E0;
+
+    @include mobile {
+      width: 100px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #E0E0E0;
+    }
+
+
+    &:last-of-type {
+      width: 0;
+      &::before {
+        display: none;
+      }
+    }
+
+    &.active {
+      background-color: $blue;
+
+      &::after {
+        background-color: $blue;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: -4px;
+        width: 11px;
+        height: 8px;
+        background-image: url("../../img/checkbox.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
+      }
+
+      & + .wizard-nav-2__item {
+        &:after {
+          content: "";
+          width: 12px;
+          height: 12px;
+
+          border: 3px solid $blue;
+          background-color: white;
+
+        }
+      }
+    }
+  }
+}
+
+
+.wizard-nav-2--vertical {
+  transform: rotate(90deg);
+  margin: 210px 0;
+
+  .wizard-nav-2__item.active {
+    &:before {
+      transform: rotate(-90deg);
+    }
+  }
+}

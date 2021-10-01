@@ -1,7 +1,7 @@
 {
-  "name": "iu-kit",
+  "name": "profile-card-component",
   "version": "1.0.0",
-  "description": "сборка для проекта iu-kit",
+  "description": "сборка для проекта profile-card-component",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -53,8 +53,10 @@
     "node": "8.15"
   },
   "dependencies": {
+    "bulma-calendar": "^6.1.12",
     "del": "^4.1.1",
     "gulp-include": "^2.4.1",
+    "litepicker": "^2.0.11",
     "plumber": "^0.4.8"
   }
 }
