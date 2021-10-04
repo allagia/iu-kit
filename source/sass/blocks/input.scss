@@ -1,8 +1,7 @@
 .input {
   display: flex;
   flex-direction: column;
-  width: 260px;
-  margin: 0 0 40 px;
+  max-width: 260px;
 
   input,
   select {

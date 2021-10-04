@@ -1,6 +1,7 @@
 .alert {
   position: relative;
   max-width: 313px;
+  width: 100%;
   padding: 13px;
   margin-bottom: 20px;
   box-shadow: 0px 10px 23px rgba(0, 0, 0, 0.12);
@@ -22,12 +23,17 @@
 
   &__close-btn {
     position: absolute;
+
     top: 10px;
     right: 10px;
+
+    box-sizing: border-box;
     width: 22px;
     height: 22px;
-    border-radius: 50%;
+    padding: 0;
+
     border: none;
+    border-radius: 50%;
     background-color: transparent;
     transition: opacity $transition-props;
 

@@ -1,8 +1,6 @@
 .pagination-1 {
   display: flex;
   align-items: center;
-  gap: 11px;
-
 
   &__btn {
     display: flex;
@@ -10,10 +8,15 @@
     align-items: center;
     width: 36px;
     height: 36px;
+    margin-right: 11px;
     border-radius: 5px;
     background: rgba(224, 224, 224, 0.3);
     border: none;
     transition: opacity $transition-props;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
 
     &:hover {
       opacity: 0.5;
@@ -41,6 +44,8 @@
     font-size: 14px;
     line-height: 17px;
     color: $blue;
+
+    margin-right: 11px;
   }
 
   &--round {
@@ -116,21 +121,24 @@
 .pagination-2 {
   display: flex;
   align-items: center;
-  gap: 16px;
+
 
   font-weight: 500;
   font-size: 13px;
   line-height: 16px;
 
-  @include mobile {
-    gap: 10px;
+  &__numb {
+    margin: 0 16px;
+
+    @include mobile {
+      margin: 0 10px;
+    }
   }
 
-  &__btn {
 
+  &__btn {
     display: flex;
     align-items: center;
-    gap: 15px;
 
     width: 88px;
     height: 36px;
@@ -148,12 +156,20 @@
 
     svg {
       fill: transparent;
+      margin-left: 15px;
     }
 
     &--prev {
       flex-direction: row-reverse;
+      margin-right: 16px;
+
+      @include mobile {
+        margin: 0 10px;
+      }
+
       svg {
         transform: rotate(180deg);
+        margin: 0 15px 0 0 ;
       }
     }
 

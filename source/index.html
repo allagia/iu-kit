@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <include style="display: none;" src="build/img/sprite_auto.svg"></include>
+  <include class="visually-hidden" src="build/img/sprite_auto.svg"></include>
 
   <header class="header"></header>
   <main class="main container">
@@ -33,7 +33,7 @@
 
     <p class="input">
       <label for="input-focused">Input Focused</label>
-      <input type="text" id="input-focused" value="Value" autofocus>
+      <input type="text" id="input-focused" value="Value">
     </p>
 
     <p class="input">
@@ -114,7 +114,7 @@
 
 
     <div>
-      <div style="display: flex;gap: 16px;">
+      <div class="layout">
         <p class="radio">
           <input type="checkbox" id="radio-1" checked>
           <label class="radio__label" for="radio-1">Option</label>
@@ -133,7 +133,7 @@
         </p>
 
       </div>
-      <div style="display: flex; gap: 16px;">
+      <div class="layout">
         <p class="radio radio--circle">
           <input type="radio" id="radio-circle-1" checked>
           <label for="radio-circle-1">Option</label>
@@ -161,7 +161,7 @@
       </label>
     </p>
 
-    <p style="display: flex; gap: 20px;">
+    <p class="layout">
       <label class="switch">
         <input type="checkbox" id="switch-1" checked>
         <span class="switch__slider round"></span>
@@ -176,7 +176,7 @@
       </label>
     </p>
 
-    <p style="display: flex; gap: 20px;">
+    <p class="layout">
       <label class="switch switch--small">
         <input type="checkbox" id="switch-4" checked>
         <span class="switch__slider round"></span>
@@ -199,9 +199,9 @@
 
     <h2>Buttons Big</h2>
 
-    <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+    <div class="layout-1">
 
-      <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="layout-1__part">
         <button class="btn" type="button">Download</button>
         <button class="btn btn--icon-right" type="button">Download
           <svg width="24px" height="24px">
@@ -215,7 +215,7 @@
         </button>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="layout-1__part">
         <button class="btn" type="button" disabled>Download</button>
         <button class="btn btn--icon-right" type="button" disabled>Download
           <svg width="24px" height="24px">
@@ -229,7 +229,7 @@
         </button>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="layout-1__part">
         <button class="btn btn--outline" type="button">Download</button>
         <button class="btn btn--outline btn--icon-right" type="button">Download
           <svg width="24px" height="24px">
@@ -243,7 +243,7 @@
         </button>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="layout-1__part">
         <button class="btn" type="button">Download</button>
         <button class="btn btn--icon-right" type="button">Download
           <svg width="24px" height="24px">
@@ -263,9 +263,9 @@
 
     <h2>Buttons Small</h2>
 
-    <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+    <div class="layout-1">
 
-      <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="layout-1__part">
         <button class="btn btn--small" type="button">Download</button>
         <button class="btn btn--small btn--icon-right" type="button">Download
           <svg width="24px" height="24px">
@@ -279,7 +279,7 @@
         </button>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="layout-1__part">
         <button class="btn btn--small" type="button" disabled>Download</button>
         <button class="btn btn--small btn--icon-right" type="button" disabled>Download
           <svg width="24px" height="24px">
@@ -293,7 +293,7 @@
         </button>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="layout-1__part">
         <button class="btn btn--small btn--outline" type="button">Download</button>
         <button class="btn btn--small btn--outline btn--icon-right" type="button">Download
           <svg width="24px" height="24px">
@@ -307,7 +307,7 @@
         </button>
       </div>
 
-      <div style="display: flex; flex-direction: column; gap: 24px;">
+      <div class="layout-1__part">
         <button class="btn btn--small" type="button">Download</button>
         <button class="btn btn--small btn--icon-right" type="button">Download
           <svg width="24px" height="24px">
@@ -323,7 +323,7 @@
 
     </div>
 
-    <div style="display: flex; flex-direction: column; gap: 24px; margin: 40px 0;">
+    <div class="layout-1__part">
       <button class="btn btn--tag btn--outline btn--icon-right" type="button">Tag
         <span class="btn__close-icon">
           <svg width="6px" height="6px">
@@ -342,7 +342,7 @@
       <button class="btn btn--tag" type="button">Tag</button>
     </div>
 
-    <div style="display: flex; flex-direction: column; gap: 24px;">
+    <div class="layout-1__part">
       <div class="tabs">
         <button class="tabs__item tabs__item--icon active" type="button">
           <svg width="15px" height="15px">
@@ -528,7 +528,7 @@
         <option value="3">3</option>
       </select>
 
-      <span>of<span class="pagination-2__total">10</span></span>
+      <span class="pagination-2__numb">of<span class="pagination-2__total">10</span></span>
 
 
       <button class="pagination-2__btn pagination-2__btn--next" type="button">Next
