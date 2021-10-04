@@ -82,7 +82,7 @@
 
     <p class="input">
       <label for="select-id">Please choose:</label>
-      <select id="select-id" class="select">
+      <select id="select-id" class="select" aria-label="выбор опций">
         <option>Option</option>
         <option>Option 2</option>
       </select>
@@ -90,7 +90,7 @@
 
     <p class="input">
       <label class="visually-hidden" for="select-id-1">Please choose:</label>
-      <select id="select-id-1" class="select">
+      <select id="select-id-1" class="select" aria-label="выбор опций">
         <option>Choose</option>
         <option>Option</option>
         <option>Option 2</option>
@@ -116,19 +116,19 @@
     <div>
       <div style="display: flex;gap: 16px;">
         <p class="radio">
-          <input type="radio" id="radio-1" checked>
+          <input type="checkbox" id="radio-1" checked>
           <label class="radio__label" for="radio-1">Option</label>
         </p>
         <p class="radio">
-          <input type="radio" id="radio-2" name="square-btn" checked>
+          <input type="checkbox" id="radio-2" name="square-btn" checked>
           <label class="radio__label" for="radio-2"></label>
         </p>
         <p class="radio">
-          <input type="radio" id="radio-3" name="square-btn">
+          <input type="checkbox" id="radio-3" name="square-btn">
           <label class="radio__label" for="radio-3"></label>
         </p>
         <p class="radio">
-          <input type="radio" id="radio-4" name="square-btn" disabled>
+          <input type="checkbox" id="radio-4" name="square-btn" disabled>
           <label class="radio__label" for="radio-4"></label>
         </p>
 
@@ -803,18 +803,16 @@
 
     <p style="color: red;">*При изменении процента загрузки (в разметке) изменяется шкала</p>
 
-    <input class="visually-hidden" type="file" id="file-3">
-    <label class="uploader uploader--scale" for="file-3">
+    <div class="uploader uploader--scale">
       <span class="uploader__title"><span class="uploader__percent">40</span>% uploaded</span>
       <span class="uploader__scale">
         <span class="uploader__level"></span>
       </span>
       <span class="uploader__text">Please wait...</span>
       <span class="uploader__btn">Cancel</span>
-    </label>
+    </div>
 
-    <input class="visually-hidden" type="file" id="file-4">
-    <label class="uploader uploader--round" for="file-4">
+    <div class="uploader uploader--round">
       <svg viewBox="0 0 36 36" class="circular-chart">
         <path class="circle-bg" d="M18 2.0845
                          a 15.9155 15.9155 0 0 1 0 31.831
@@ -826,7 +824,7 @@
       </svg>
       <span class="uploader__text">Uploading ...</span>
       <span class="uploader__btn">Cancel</span>
-    </label>
+    </div>
 
     <input class="visually-hidden" type="file" id="file-5">
     <label class="uploader uploader--done" for="file-5">
